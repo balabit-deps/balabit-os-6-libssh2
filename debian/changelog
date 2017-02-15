@@ -1,3 +1,13 @@
+libssh2 (1.5.0-2ubuntu0.1) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: Generated secrets too short during key exchange
+    (LP: #1664812).
+    - debian/patches/CVE-2016-0787.patch: convert bytes to bits in random
+      number generation. Based on upstream patch.
+    - CVE-2016-0787
+
+ -- Brian Morton <rokclimb15@gmail.com>  Tue, 14 Feb 2017 23:33:00 -0500
+
 libssh2 (1.5.0-2) unstable; urgency=medium
 
   * Fix ABI by linking to gcrypt again (Closes: #781507)
